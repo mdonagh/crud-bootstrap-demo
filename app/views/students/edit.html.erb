@@ -1,0 +1,9 @@
+<form action="/students" method="post">
+<%= token_tag nil %>
+
+<input type="text" name="name" placeholder="name" value="<%= @student.name %>"><br>
+<input type="text" name="hobby" placeholder="hobby"  value="<%= @student.hobby %>"><br>
+<input type="number" name="age" placeholder="age" value="<%= @student.age %>"><br>
+
+<input type="submit" value="create student">
+</form>

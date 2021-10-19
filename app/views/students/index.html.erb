@@ -1,0 +1,23 @@
+
+<a href="/students/new">Create a student</a>
+
+<div class="container">
+ <div class="row">
+  <div class="col-sm"></div>
+  <div class="col-sm">
+    <table class="table">
+      <tbody>
+          <% @students.each do |student| %>
+          <tr>
+            <td><a href="/students/<%= student.id%>"><%= student.id %></a></td>
+            <td><a href="/students/<%= student.id%>"><%= student.name %></a></td>
+            <td><%= student.age %></td>
+            <td><%= student.hobby %></td>
+          </tr>
+          <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm"></div>
+</div>
+</div>
